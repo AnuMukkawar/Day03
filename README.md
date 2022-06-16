@@ -4,23 +4,23 @@ Q1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
 
 Ans-
 
- var address=[{"city":"Latur",
-  "area":"Shivaji chowk",
-  "colony":"shrinagar colony"
-  }];
+    var address=[{"city":"Latur",
+    "area":"Shivaji chowk",
+    "colony":"shrinagar colony"
+    }];
  
-  //for loop
-  for(var i=0;i<address.length;i++)
-  {
-     //1st way of accessing
-    let obj=address[i];
-    console.log("City - "+obj.city);
-    console.log("Area - "+obj.area);
-    console.log("Colony - "+obj.colony);
+    //for loop
+    for(var i=0;i<address.length;i++)
+    {
+       //1st way of accessing
+      var obj=address[i];
+      console.log("City - "+obj.city);
+      console.log("Area - "+obj.area);
+      console.log("Colony - "+obj.colony);
 
-    //2nd way of accessing
-    console.log(address[i]);
-  }
+      //2nd way of accessing
+      console.log(address[i]);
+    }
 
   //for-in loop
   for(var i in address)
