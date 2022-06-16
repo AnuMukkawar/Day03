@@ -4,14 +4,14 @@ Q1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
 
 Ans-
 
-var address=[{"city":"Latur",
- "area":"Shivaji chowk",
- "colony":"shrinagar colony"
- }];
+ var address=[{"city":"Latur",
+  "area":"Shivaji chowk",
+  "colony":"shrinagar colony"
+  }];
  
- //for loop
- for(var i=0;i<address.length;i++)
- {
+  //for loop
+  for(var i=0;i<address.length;i++)
+  {
      //1st way of accessing
     let obj=address[i];
     console.log("City - "+obj.city);
@@ -20,25 +20,24 @@ var address=[{"city":"Latur",
 
     //2nd way of accessing
     console.log(address[i]);
- }
+  }
 
- //for-in loop
- for(var i in address)
- {
+  //for-in loop
+  for(var i in address)
+  {
     console.log("City - "+address[i].city);
     console.log("Area - "+address[i].area);
     console.log("Colony - "+address[i].colony);
- }
+  }
  
- //for of loop
- for(const val of address)
- {
+  //for of loop
+  for(const val of address)
+  {
     console.log(val);
- }
+  }
  
- //for-each loop
- console.log("for each loop");
- address.forEach((item)=>{
+  //for-each loop
+  address.forEach((item)=>{
          console.log(item);
          
          //2nd way
@@ -51,21 +50,21 @@ Q2. Create your own resume data in JSON format
 
 Ans-
 
-var resume=[{
- "Firstname":"Anuja",
- "Lastname":"Mukkawar",
- "Education":"Graduation in Bachlore of Computer Science Engineering",
- "ProfessionalSummary":"I am working as skills developer in Aera Technology. I worked on SQL and Java."
- }];
+ var resume=[{
+  "Firstname":"Anuja",
+  "Lastname":"Mukkawar",
+  "Education":"Graduation in Bachlore of Computer Science Engineering",
+  "ProfessionalSummary":"I am working as skills developer in Aera Technology. I worked on SQL and Java."
+  }];
 
-for(res in resume)
-{
+ for(res in resume)
+ {
     console.log("Here is my resume...");
     console.log("Firstname- "+resume[res].Firstname);
     console.log("Lastname- "+resume[res].Lastname);
     console.log("Education- "+resume[res].Education);
     console.log("ProfessionalSummary- "+resume[res].ProfessionalSummary);
-}
+ }
 
 Q3. Read about the difference between window, screen and document in javascript
 
